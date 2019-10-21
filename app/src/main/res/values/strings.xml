@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name_main">RAHUL</string>
+    <string name="app_name">RAHUL</string>
+
+    <string name="wikitude_license_key">Yka6ot0f4l63R3BBsm0Ixfwe+rDPNbTfr6KJ48REJo75FtDfkONnQp9YOe90V+4PqeFIDqDXVx5GbHednoxHkD0HZ+qCJ+61rp0Ki6pBuGJpjjKzzzMetiM+f8svq9kMccKxsuzLf2K9Gq5Elt5euL3ozq30s0kUv6ggj2n90cNTYWx0ZWRfX08ziLNVfZOsbXHGJ2UXeAym/XMAKlAfnXKTBTkKAM+d0c8gBT61quTeHoUmn1Db/jYppP+Bo/vjdf94H2r2O5A2a8afS1Jv3ms11wYwHN2Is6l6LHq5cYG+nmsZXgdZhC2PfXFWNy/4Q9ocB0ZXUJi4V1luvX+Kdw1duk8t65JwU/pNwdi78fFVBaWhL4DIAsaEqAGptOaM9xBgpnLnbxfon/iMBgwFygOou91Gaj65kyXi/0Ca2rwuCGIBUWjwCd8+0T2n9LCxuLQWZcVgPfRbPbyxXU+qwRdYinzHXRz3esP6AXS4Ye5A6gDylmZoZm5tgjpvSrxYBEerzw4TPe1z3V0hjcDBj8mdMryT9OYqEh29gQm0J2nbH++CHEwX342fw+jnSfmz/EdvtA5gxb13XhzVmUJfq3PxKXQRrUsitSXDQ4zLyLmecawwvifZFUEINNwuUOsdUSMs0ZaeEBw1/PIVRxFUm3SAc4Dn9bAbTyDujGJI40heNU2v2zTpbPvsSWZ1DmZsKj9JwUkyXBw3GNlUyczzWIFm21qXMaqRT0Bqckqqa/9kU2IyYqK+Q68pZ3CI9HAz</string>
+    <string name="error_loading_ar_experience">Could not load AR experience.</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string name="error_no_internet">No internet.Please try again.</string>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intinic.sdk">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!--
+        android:icon="@drawable/ic_launcher_background"
+    -->
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name_main"
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".TestInjectActivity"
+            android:theme="@style/SDKAppThemeNoActionBar"
+            android:screenOrientation="portrait"/>
+
+<!--        <activity
+            android:theme="@style/SDKAppThemeNoActionBar"
+            android:name=".PLPActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.main" />
+                <category android:name="android.intent.category.launcher" />
+            </intent-filter>
+        </activity>-->
+
+        <activity
+            android:theme="@style/SDKAppThemeNoActionBar"
+            android:name=".PLPActivity"
+            android:screenOrientation="portrait">
+<!--            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:theme="@style/SDKAppThemeNoActionBar"
+            android:name=".PermissionActivity"
+            android:label="@string/title_activity_test"/>
+
+        <activity
+            android:theme="@style/SDKAppThemeNoActionBar"
+            android:name=".NonARActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ARCoreActivity"
+            android:theme="@style/SDKAppThemeNoActionBarWindowTranslucent"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <uses-library android:name ="org.apache.http.legacy" android:required ="false"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_toolbar" />
+
+
+
+    <fragment
+        android:id="@+id/arFragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLL"
+        android:layout_below="@+id/toolbarLL" />
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLL"
+        android:clickable="false"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    <!--    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/addToCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cart"
+            android:layout_gravity="bottom|end"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            app:elevation="6dp"
+            app:backgroundTint="@color/colorPrimary"
+            app:pressedTranslationZ="12dp"/>-->
+
+    <LinearLayout
+        android:id="@+id/buttonLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/colorWhite"
+        android:elevation="5dp"
+        android:padding="5dp"
+        android:translationZ="5dp"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/addToWishListTV"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_with_border"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Add to Wishlist" />
+
+        <TextView
+            android:id="@+id/addToCartTV"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_without_border"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Add to Cart"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_circle" />
+
+        <ImageView
+            android:id="@+id/addToCart"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_cart" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonLL"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/screenShotBackground"
+            android:layout_width="48dp"
+            android:elevation="5dp"
+            android:layout_centerInParent="true"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_circle" />
+
+        <ImageView
+            android:id="@+id/screenShot"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="5dp"
+            android:background="@drawable/ic_photo_camera" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
